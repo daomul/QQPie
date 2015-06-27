@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="532" y="-488"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Contacts Table View Controller-->
         <scene sceneID="Ink-iZ-pLu">
             <objects>
-                <tableViewController id="ZZJ-Z9-vxx" sceneMemberID="viewController">
+                <tableViewController id="ZZJ-Z9-vxx" customClass="XBContactsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rma-j3-p9F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +102,9 @@
                                 <segment title="分组"/>
                                 <segment title="全部"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentedViewChange:" destination="ZZJ-Z9-vxx" eventType="valueChanged" id="pOP-FT-BB5"/>
+                            </connections>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" image="header_icon_add" id="96c-j4-evd">
                             <connections>

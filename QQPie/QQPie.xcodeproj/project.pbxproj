@@ -14,6 +14,7 @@
 		880ACA611B3D6E59008EA182 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880ACA601B3D6E59008EA182 /* Images.xcassets */; };
 		880ACA641B3D6E59008EA182 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880ACA621B3D6E59008EA182 /* LaunchScreen.xib */; };
 		880ACA701B3D6E59008EA182 /* QQPieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880ACA6F1B3D6E59008EA182 /* QQPieTests.m */; };
+		880DCD4C1B3E4C9C0082EE89 /* XBContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880DCD4B1B3E4C9C0082EE89 /* XBContactsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		880ACA691B3D6E59008EA182 /* QQPieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQPieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		880ACA6E1B3D6E59008EA182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880ACA6F1B3D6E59008EA182 /* QQPieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPieTests.m; sourceTree = "<group>"; };
+		880DCD4A1B3E4C9C0082EE89 /* XBContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBContactsTableViewController.h; sourceTree = "<group>"; };
+		880DCD4B1B3E4C9C0082EE89 /* XBContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBContactsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,11 @@
 		880ACA521B3D6E59008EA182 /* QQPie */ = {
 			isa = PBXGroup;
 			children = (
+				880DCD471B3E4C510082EE89 /* class */,
 				880ACA571B3D6E59008EA182 /* AppDelegate.h */,
 				880ACA581B3D6E59008EA182 /* AppDelegate.m */,
 				880ACA5A1B3D6E59008EA182 /* ViewController.h */,
 				880ACA5B1B3D6E59008EA182 /* ViewController.m */,
-				880ACA5D1B3D6E59008EA182 /* Main.storyboard */,
 				880ACA601B3D6E59008EA182 /* Images.xcassets */,
 				880ACA621B3D6E59008EA182 /* LaunchScreen.xib */,
 				880ACA531B3D6E59008EA182 /* Supporting Files */,
@@ -117,6 +120,32 @@
 				880ACA6E1B3D6E59008EA182 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		880DCD471B3E4C510082EE89 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				880DCD491B3E4C6A0082EE89 /* contact(联系人) */,
+				880DCD481B3E4C580082EE89 /* main */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+		880DCD481B3E4C580082EE89 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				880ACA5D1B3D6E59008EA182 /* Main.storyboard */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		880DCD491B3E4C6A0082EE89 /* contact(联系人) */ = {
+			isa = PBXGroup;
+			children = (
+				880DCD4A1B3E4C9C0082EE89 /* XBContactsTableViewController.h */,
+				880DCD4B1B3E4C9C0082EE89 /* XBContactsTableViewController.m */,
+			);
+			name = "contact(联系人)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +250,7 @@
 			files = (
 				880ACA5C1B3D6E59008EA182 /* ViewController.m in Sources */,
 				880ACA591B3D6E59008EA182 /* AppDelegate.m in Sources */,
+				880DCD4C1B3E4C9C0082EE89 /* XBContactsTableViewController.m in Sources */,
 				880ACA561B3D6E59008EA182 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
